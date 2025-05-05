@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.runners.CucumberTest" time="25.338" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/test-classes:/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/classes:/Users/henrique_cesar/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/henrique_cesar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/henrique_cesar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/henrique_cesar/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/henrique_cesar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-java/7.11.0/cucumber-java-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-core/7.11.0/cucumber-core-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-gherkin/7.11.0/cucumber-gherkin-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.11.0/cucumber-gherkin-messages-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/gherkin/26.0.3/gherkin-26.0.3.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/messages/21.0.1/messages-21.0.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/datatable/7.11.0/datatable-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-plugin/7.11.0/cucumber-plugin-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/docstring/7.11.0/docstring-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/html-formatter/20.2.1/html-formatter-20.2.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/junit-xml-formatter/0.1.0/junit-xml-formatter-0.1.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/henrique_cesar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.11.0/cucumber-junit-platform-engine-7.11.0.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/henrique_cesar/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite/1.9.3/junit-platform-suite-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-api/1.9.3/junit-platform-suite-api-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.9.3/junit-platform-suite-engine-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.9.3/junit-platform-suite-commons-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/Users/henrique_cesar/Library/Java/JavaVirtualMachines/corretto-11.0.24/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/surefire/surefirebooter1422006833174027087.jar /Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/surefire 2025-05-05T19-05-53_418-jvmRun1 surefire112681038990227765tmp surefire_018399007906940348310tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/test-classes:/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/classes:/Users/henrique_cesar/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/henrique_cesar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/henrique_cesar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/henrique_cesar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/henrique_cesar/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/henrique_cesar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/henrique_cesar/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/henrique_cesar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-java/7.11.0/cucumber-java-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-core/7.11.0/cucumber-core-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-gherkin/7.11.0/cucumber-gherkin-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.11.0/cucumber-gherkin-messages-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/gherkin/26.0.3/gherkin-26.0.3.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/messages/21.0.1/messages-21.0.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/datatable/7.11.0/datatable-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-plugin/7.11.0/cucumber-plugin-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/docstring/7.11.0/docstring-7.11.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/html-formatter/20.2.1/html-formatter-20.2.1.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/junit-xml-formatter/0.1.0/junit-xml-formatter-0.1.0.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/henrique_cesar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/henrique_cesar/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.11.0/cucumber-junit-platform-engine-7.11.0.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/henrique_cesar/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite/1.9.3/junit-platform-suite-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-api/1.9.3/junit-platform-suite-api-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.9.3/junit-platform-suite-engine-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.9.3/junit-platform-suite-commons-1.9.3.jar:/Users/henrique_cesar/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/henrique_cesar"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/henrique_cesar/Library/Java/JavaVirtualMachines/corretto-11.0.24/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest/target/surefire/surefirebooter1422006833174027087.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.24+8-LTS"/>
+    <property name="user.name" value="henrique_cesar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.24.8.1"/>
+    <property name="localRepository" value="/Users/henrique_cesar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/vd/yqjg96jj7jq85yf6qgkn9t640000gn/T/"/>
+    <property name="java.version" value="11.0.24"/>
+    <property name="user.dir" value="/Users/henrique_cesar/Downloads/DesafioOutsera/TesteApiRest"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/henrique_cesar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.24+8-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Requisição GET bem-sucedida" classname="Testes de API com Rest Assured e Cucumber" time="1.523">
+    <system-out><![CDATA[
+@Teste01
+Cenario: Requisição GET bem-sucedida                            &amp#27;[90m# features/api.feature:9&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição GET para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts/1"&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoGETParaOEndpoint(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m             &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo corpo da resposta deve conter o campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"userId"&amp#27;[0m            &amp#27;[90m# com.example.steps.ApiSteps.oCorpoDaRespostaDeveConterOCampo(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Buscar post existente" classname="Testes de API com Rest Assured e Cucumber" time="1.107">
+    <system-out><![CDATA[
+@Teste02
+Cenario: Buscar post existente                                  &amp#27;[90m# features/api.feature:16&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição GET para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts/1"&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoGETParaOEndpoint(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m             &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo corpo da resposta deve conter o campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"userId"&amp#27;[0m            &amp#27;[90m# com.example.steps.ApiSteps.oCorpoDaRespostaDeveConterOCampo(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Buscar post inexistente" classname="Testes de API com Rest Assured e Cucumber" time="0.896">
+    <system-out><![CDATA[
+@Teste03
+Cenario: Buscar post inexistente                                   &amp#27;[90m# features/api.feature:23&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                   &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição GET para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts/9999"&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoGETParaOEndpoint(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Criar novo post" classname="Testes de API com Rest Assured e Cucumber" time="1.58">
+    <system-out><![CDATA[
+@Teste04
+Cenario: Criar novo post                                                    &amp#27;[90m# features/api.feature:29&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                            &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição POST para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts"&amp#27;[0m&amp#27;[32m com o corpo:&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoPOSTParaOEndpointComOCorpo(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                         &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo corpo da resposta deve conter o campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"title"&amp#27;[0m                         &amp#27;[90m# com.example.steps.ApiSteps.oCorpoDaRespostaDeveConterOCampo(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Atualizar post existente" classname="Testes de API com Rest Assured e Cucumber" time="1.182">
+    <system-out><![CDATA[
+@Teste05
+Cenario: Atualizar post existente                                            &amp#27;[90m# features/api.feature:43&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                             &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição PUT para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts/1"&amp#27;[0m&amp#27;[32m com o corpo:&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoPUTParaOEndpointComOCorpo(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                          &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo corpo da resposta deve conter o campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"title"&amp#27;[0m                          &amp#27;[90m# com.example.steps.ApiSteps.oCorpoDaRespostaDeveConterOCampo(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Deletar post existente" classname="Testes de API com Rest Assured e Cucumber" time="1.519">
+    <system-out><![CDATA[
+@Teste06
+Cenario: Deletar post existente                                    &amp#27;[90m# features/api.feature:58&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                                   &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição DELETE para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/posts/1"&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoDELETEParaOEndpoint(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Buscar lista de usuários" classname="Testes de API com Rest Assured e Cucumber" time="0.641">
+    <system-out><![CDATA[
+@Teste07
+Cenario: Buscar lista de usuários                             &amp#27;[90m# features/api.feature:64&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque a API está disponível&amp#27;[0m                              &amp#27;[90m# com.example.steps.ApiSteps.queAAPIEstáDisponível()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32meu envio uma requisição GET para o endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m &amp#27;[90m# com.example.steps.ApiSteps.euEnvioUmaRequisiçãoGETParaOEndpoint(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo código de status da resposta deve ser &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m           &amp#27;[90m# com.example.steps.ApiSteps.oCódigoDeStatusDaRespostaDeveSer(int)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo corpo da resposta deve conter o campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"username"&amp#27;[0m        &amp#27;[90m# com.example.steps.ApiSteps.oCorpoDaRespostaDeveConterOCampo(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
