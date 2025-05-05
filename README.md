@@ -35,9 +35,11 @@ src
 
 bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
+
 cd seu-repositorio
 
 ### 2. Ativar publicação no Cucumber Reports (opcional)
+
 export CUCUMBER_PUBLISH_ENABLED=true
 
 ### 3. Executar os testes
@@ -46,12 +48,15 @@ mvn clean test
 ---
 
 📊 Relatórios de Teste
+
 🔹 Relatório HTML local
+
 Após a execução, o relatório estará disponível em:
 
 target/cucumber-report.html
 
 🔹 Publicação no Cucumber Reports
+
 Se ativado, ao final da execução será exibido um link como este:
 
 https://reports.cucumber.io/report-collections/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
