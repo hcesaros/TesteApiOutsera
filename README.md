@@ -18,6 +18,7 @@ Este projeto tem como objetivo a automação de testes de APIs REST utilizando *
 ## 📁 Estrutura do projeto
 
 src
+
 ├── test
 
 │ ├── java
