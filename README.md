@@ -19,12 +19,19 @@ Este projeto tem como objetivo a automação de testes de APIs REST utilizando *
 
 src
 ├── test
+
 │ ├── java
+
 │ │ └── com.example
+
 │ │ ├── runners # Classe Runner com JUnit Platform
+
 │ │ └── steps # Implementações das steps do Cucumber
+
 │ └── resources
+
 │ ├── features # Cenários de teste (BDD)
+
 │ └── junit-platform.properties # Ativa a publicação no Cucumber Reports
 
 ---
@@ -77,10 +84,13 @@ Funcionalidade: Testes de API com Cucumber e publicação no Cucumber Reports
 
 💡 Possibilidades de expansão
 
-Integração com CI/CD (GitHub Actions, Jenkins etc.);
-Testes com autenticação/token;
-Validação de schema JSON;
-Execução paralela com tags e perfis.
+* Integração com CI/CD (GitHub Actions, Jenkins etc.);
+
+* Testes com autenticação/token;
+
+* Validação de schema JSON;
+
+* Execução paralela com tags e perfis.
 
 ---
 
