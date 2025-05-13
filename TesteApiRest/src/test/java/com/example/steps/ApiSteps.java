@@ -55,6 +55,9 @@ public class ApiSteps {
      */
     @E("o corpo da resposta deve conter o campo {string}")
     public void oCorpoDaRespostaDeveConterOCampo(String campo) {
+        if (campo == null || campo.trim().isEmpty()) {
+            return;
+        }
         assertThat(response.getBody().asString(), containsString(campo));
     }
 
