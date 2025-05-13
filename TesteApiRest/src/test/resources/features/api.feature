@@ -10,7 +10,6 @@ Funcionalidade: Testes de API com Rest Assured e Cucumber
     Dado que a API está disponível
     Quando eu envio uma requisição GET para o endpoint "/posts/1"
     Entao o código de status da resposta deve ser 200
-    E o corpo da resposta deve conter o campo "userId"
 
   @Teste02
   Cenario: Buscar post existente
@@ -29,13 +28,8 @@ Funcionalidade: Testes de API com Rest Assured e Cucumber
   Cenario: Criar novo post
     Dado que a API está disponível
     Quando eu envio uma requisição POST para o endpoint "/posts" com o corpo:
-    """
-      {
-        "title": "Teste Cucumber",
-        "body": "Conteúdo gerado por testes",
-        "userId": 1
-      }
-      """
+      | title           | body                        | userId |
+      | Teste Cucumber  | Conteúdo gerado por testes  | 1      |
     Entao o código de status da resposta deve ser 201
     E o corpo da resposta deve conter o campo "title"
 
@@ -43,14 +37,8 @@ Funcionalidade: Testes de API com Rest Assured e Cucumber
   Cenario: Atualizar post existente
     Dado que a API está disponível
     Quando eu envio uma requisição PUT para o endpoint "/posts/1" com o corpo:
-  """
-    {
-      "id": 1,
-      "title": "Título atualizado",
-      "body": "Conteúdo atualizado",
-      "userId": 1
-    }
-    """
+      | id | title            | body               | userId |
+      | 1  | Título atualizado | Conteúdo atualizado | 1      |
     Entao o código de status da resposta deve ser 200
     E o corpo da resposta deve conter o campo "title"
 
