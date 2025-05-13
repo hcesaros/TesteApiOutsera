@@ -5,7 +5,6 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -13,7 +12,6 @@ import static org.hamcrest.Matchers.equalTo;
 import io.cucumber.datatable.DataTable;
 
 import java.util.Map;
-import java.util.List;
 
 
 /**
@@ -63,31 +61,28 @@ public class ApiSteps {
     /**
      * Envia uma requisição POST com corpo em JSON para o endpoint informado
      * @param endpoint Caminho do recurso (ex: "/posts")
-     * @param corpo JSON no formato DataTable com os dados a serem enviados
+     * @param dataTable com os dados a serem enviados
      */
-    @Quando("eu envio uma requisição POST para o endpoint {string} com os dados:")
+    @Quando("eu envio uma requisição POST para o endpoint {string} com o corpo:")
     public void enviarRequisicaoPostComDados(String endpoint, DataTable dataTable) {
         Map<String, String> dados = dataTable.asMaps().get(0);
 
-        String payload = String.format("""
-            {
-              "title": "%s",
-              "body": "%s",
-              "userId": %s
-            }
-            """, 
-            dados.get("title"),
-            dados.get("body"),
-            dados.get("userId")
-        );
+        StringBuilder builder = new StringBuilder();
+        builder.append("{")
+                .append("\"title\": \"").append(dados.get("title")).append("\",")
+                .append("\"body\": \"").append(dados.get("body")).append("\",")
+                .append("\"userId\": ").append(dados.get("userId"))
+                .append("}");
 
-        RequestSpecification request = RestAssured
+        String payload = builder.toString();
+
+        response = RestAssured
                 .given()
                 .baseUri("https://jsonplaceholder.typicode.com")
                 .header("Content-Type", "application/json")
-                .body(payload);
-
-        response = request.post(endpoint);
+                .body(payload)
+                .when()
+                .post(endpoint);
     }
 
     /**
@@ -102,32 +97,28 @@ public class ApiSteps {
     /**
      * Envia uma requisição PUT com corpo JSON para atualizar um recurso
      * @param endpoint Caminho do recurso (ex: "/posts/1")
-     * @param corpo JSON com os dados atualizados
+     * @param dataTable JSON com os dados atualizados
      */
     @Quando("eu envio uma requisição PUT para o endpoint {string} com o corpo:")
-    public void envioRequisicaoPUTComDataTable(String endpoint, DataTable dataTable) {
-    Map<String, String> dados = dataTable.asMaps().get(0);
+    public void envioRequisicaoPutComDataTable(String endpoint, DataTable dataTable) {
+        Map<String, String> dados = dataTable.asMaps().get(0);
 
-    String payload = String.format("""
-        {
-            "id": %s,
-            "title": "%s",
-            "body": "%s",
-            "userId": %s
-        }
-        """,
-        dados.get("id"),
-        dados.get("title"),
-        dados.get("body"),
-        dados.get("userId")
-    );
+        StringBuilder builder = new StringBuilder();
+        builder.append("{")
+                .append("\"id\": ").append(dados.get("id")).append(",")
+                .append("\"title\": \"").append(dados.get("title")).append("\",")
+                .append("\"body\": \"").append(dados.get("body")).append("\",")
+                .append("\"userId\": ").append(dados.get("userId"))
+                .append("}");
 
-    response = RestAssured
-            .given()
+        String payload = builder.toString();
+
+        response = RestAssured
+                .given()
                 .baseUri("https://jsonplaceholder.typicode.com")
                 .header("Content-Type", "application/json")
                 .body(payload)
-            .when()
+                .when()
                 .put(endpoint);
     }
 }
