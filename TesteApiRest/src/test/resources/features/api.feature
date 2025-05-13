@@ -54,5 +54,3 @@ Funcionalidade: Testes de API com Rest Assured e Cucumber
     Quando eu envio uma requisição GET para o endpoint "/users"
     Entao o código de status da resposta deve ser 200
     E o corpo da resposta deve conter o campo "username"
-
-
