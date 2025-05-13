@@ -29,7 +29,7 @@ public class ApiSteps {
      * Define a URL base da API simulada JSONPlaceholder
      */
     @Dado("que a API está disponível")
-    public void queAAPIEstáDisponível() {
+    public void queApiEstaDisponivel() {
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
     }
 
@@ -38,7 +38,7 @@ public class ApiSteps {
      * @param endpoint Caminho do recurso (ex: "/posts/1")
      */
     @Quando("eu envio uma requisição GET para o endpoint {string}")
-    public void euEnvioUmaRequisiçãoGETParaOEndpoint(String endpoint) {
+    public void enviarRequisicaoGetParaEndpoint(String endpoint) {
         response = RestAssured.get(endpoint);
     }
 
@@ -47,7 +47,7 @@ public class ApiSteps {
      * @param statusCode Código esperado (ex: 200, 404)
      */
     @Entao("o código de status da resposta deve ser {int}")
-    public void oCódigoDeStatusDaRespostaDeveSer(int statusCode) {
+    public void oCodigoDeStatusDaRespostaDeveSer(int statusCode) {
         assertThat(response.getStatusCode(), equalTo(statusCode));
     }
 
@@ -66,7 +66,7 @@ public class ApiSteps {
      * @param corpo JSON no formato DataTable com os dados a serem enviados
      */
     @Quando("eu envio uma requisição POST para o endpoint {string} com os dados:")
-    public void eu_envio_uma_requisicao_post_para_o_endpoint_com_os_dados(String endpoint, DataTable dataTable) {
+    public void enviarRequisicaoPostComDados(String endpoint, DataTable dataTable) {
         Map<String, String> dados = dataTable.asMaps().get(0);
 
         String payload = String.format("""
@@ -95,7 +95,7 @@ public class ApiSteps {
      * @param endpoint Caminho do recurso (ex: "/posts/1")
      */
     @Quando("eu envio uma requisição DELETE para o endpoint {string}")
-    public void euEnvioUmaRequisiçãoDELETEParaOEndpoint(String endpoint) {
+    public void enviarRequisicaoDeleteParaEndpoint(String endpoint) {
         response = RestAssured.delete(endpoint);
     }
 
