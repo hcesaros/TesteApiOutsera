@@ -10,6 +10,11 @@ import io.restassured.response.Response;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
+import io.cucumber.datatable.DataTable;
+
+import java.util.Map;
+import java.util.List;
+
 
 /**
  * Classe que implementa os passos definidos nos arquivos .feature
@@ -58,15 +63,31 @@ public class ApiSteps {
     /**
      * Envia uma requisição POST com corpo em JSON para o endpoint informado
      * @param endpoint Caminho do recurso (ex: "/posts")
-     * @param corpo JSON no formato string com os dados a serem enviados
+     * @param corpo JSON no formato DataTable com os dados a serem enviados
      */
-    @Quando("eu envio uma requisição POST para o endpoint {string} com o corpo:")
-    public void euEnvioUmaRequisiçãoPOSTParaOEndpointComOCorpo(String endpoint, String corpo) {
-        response = RestAssured.given()
-                .contentType(ContentType.JSON)
-                .body(corpo)
-                .when()
-                .post(endpoint);
+    @Quando("eu envio uma requisição POST para o endpoint {string} com os dados:")
+    public void eu_envio_uma_requisicao_post_para_o_endpoint_com_os_dados(String endpoint, DataTable dataTable) {
+        Map<String, String> dados = dataTable.asMaps().get(0);
+
+        String payload = String.format("""
+            {
+              "title": "%s",
+              "body": "%s",
+              "userId": %s
+            }
+            """, 
+            dados.get("title"),
+            dados.get("body"),
+            dados.get("userId")
+        );
+
+        RequestSpecification request = RestAssured
+                .given()
+                .baseUri("https://jsonplaceholder.typicode.com")
+                .header("Content-Type", "application/json")
+                .body(payload);
+
+        response = request.post(endpoint);
     }
 
     /**
@@ -84,11 +105,29 @@ public class ApiSteps {
      * @param corpo JSON com os dados atualizados
      */
     @Quando("eu envio uma requisição PUT para o endpoint {string} com o corpo:")
-    public void euEnvioUmaRequisiçãoPUTParaOEndpointComOCorpo(String endpoint, String corpo) {
-        response = RestAssured.given()
-                .contentType(ContentType.JSON)
-                .body(corpo)
-                .when()
+    public void envioRequisicaoPUTComDataTable(String endpoint, DataTable dataTable) {
+    Map<String, String> dados = dataTable.asMaps().get(0);
+
+    String payload = String.format("""
+        {
+            "id": %s,
+            "title": "%s",
+            "body": "%s",
+            "userId": %s
+        }
+        """,
+        dados.get("id"),
+        dados.get("title"),
+        dados.get("body"),
+        dados.get("userId")
+    );
+
+    response = RestAssured
+            .given()
+                .baseUri("https://jsonplaceholder.typicode.com")
+                .header("Content-Type", "application/json")
+                .body(payload)
+            .when()
                 .put(endpoint);
     }
 }
